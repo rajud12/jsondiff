@@ -1,0 +1,63 @@
+{
+  "type": "type1",
+  "spec": {
+    "ioConfig": {
+      "type": "type1",
+      "inputSource": {
+        "type": "type2",
+        "paths": "path1"
+      },
+      "inputFormat": {
+        "type": "parquet"
+      }
+    },
+    "tuningConfig": {
+      "type": "type1",
+      "partitionSpec": {
+        "type": "dynamic"
+      }
+    },
+    "dataSchema": {
+      "timestampSpec": {
+        "column": "col1",
+        "format": "millis"
+      },
+      "dimensionSpec": {
+        "dimensions": [
+          {
+            "type": "string",
+            "name": "name1"
+          },
+          {
+            "type": "long",
+            "name": "name2"
+          },          {
+            "type": "long",
+            "name": "name3"
+          },          {
+            "type": "long",
+            "name": "name4"
+          },          {
+            "type": "double",
+            "name": "name5"
+          },          {
+            "type": "long",
+            "name": "name6"
+          },          {
+            "type": "long",
+            "name": "name7"
+          },          {
+            "type": "long",
+            "name": "name8"
+          }
+        ]
+      },
+      "granularitySpec": {
+        "queryGranularity": "none",
+        "rollup": "false",
+        "segmentGranularity": "all"
+      },
+      "dataSource": "db1.table1"
+    }
+  }
+}
