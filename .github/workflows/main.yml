@@ -1,0 +1,19 @@
+name: CI
+on:
+ push:
+  # Specify the branches that trigger the workflow
+  branches: [ "main" ]
+
+# Writing the jobs that will be executed as part of workflow
+jobs:
+ # Write name of the job as key
+ myfeature:
+  # Specify the runner
+  runs-on: ubuntu-22.04
+  steps:
+   # Write the step name
+   - name: Print Name
+     run: |
+      echo "Hello from $(whoami)"
+ 
+ 
